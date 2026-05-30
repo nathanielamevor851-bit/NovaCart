@@ -1,0 +1,418 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathaniel">
+    <meta name="description" content="A smart e-commerce website">
+    <meta name="keywords" content="shop, cart, prices, label">
+
+    <title>NovaCart | Where Quality is Sold</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mediaQuery.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Favicon -->
+    <link rel="icon" href="Images/novacart_favicon_2.png" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+
+    <!-- LOGO -->
+    <div class="sidebar-logo">
+        <a href="index.html"> <img src="Images/logo2.png" alt="NovaCart Logo"></a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="sidebar-nav">
+        <a href="index.html" class="active"><i class="fas fa-house"></i><span class="text">Home</span></a>
+        <a href="products.html"> <i class="fas fa-box"></i><span class="text">Products</span></a>
+        <a href="about.html"><i class="fas fa-circle-info"></i><span class="text">About</span></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><span class="text">Contact</span></a>
+        <a href="wishlist.html"><i class="fas fa-heart"></i><span class="text">Wishlist</span></a>
+        <a href="cart.html"><i class="fas fa-cart-shopping"></i><span class="text">Cart</span></a>
+        <a href="account.html"><i class="fas fa-user"></i><span class="text">Login / Signup</span></a>
+    </nav>
+</aside>
+
+<!-- MOBILE MENU BUTTON -->
+<button class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i></button>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <header class="top-header">
+    <form class="search-bar">
+        <input type="text" class="search-input" placeholder="Search products...">
+        <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+
+    </form>
+
+    
+    <div class="header-actions">
+         <a href="wishlist.html" title="notifications"><i class="fas fa-bell"></i></a>
+        <a href="wishlist.html" title="wishlist"><i class="fas fa-heart"></i></a>
+         <a href="cart.html" title="cart"><i class="fas fa-cart-shopping"></i></a>
+            <a href="account.html" title="user account"><i class="fas fa-user"></i></a>
+    </div>
+
+</header>
+
+</div>
+
+
+
+ <section class="hero">
+    <div class="hero-content">
+        <span class="hero-badge">Smart Shopping Experience</span>
+        <h1>Shop Smarter <br>With <span>NovaCart</span></h1>
+        <p>
+            Discover premium fashion, gadgets,
+            electronics, and lifestyle products
+            with unbeatable deals and a seamless
+            shopping experience.
+        </p>
+
+       
+        <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary">Explore Products</a>
+            <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-card">
+                <h2>10K+</h2>
+                <span>Customers</span>
+            </div>
+             <div class="stat-card">
+                <h2>500+</h2>
+                <span>Products</span>
+            </div>
+    
+            <div class="stats-card">
+                <h2>24/7</h2>
+                <span>Support</span>
+            </div>
+        </div>
+    </div>
+     <div class="hero-image">
+            <img src="Images/women watches.jpg"  loading="lazy" alt="watches" title="Classic Women Watches">
+            <img src="Images/kitchen cabinet.jpg" loading="lazy" alt="kitchen cabinet" title="Modern Kitchen Cabinet">
+        </div>
+
+    <!-- GLOW EFFECTS -->
+    <div class="hero-glow glow1"></div>
+    <div class="hero-glow glow2"></div>
+
+</section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="categories-section">
+        <div class="container5 categories-top">
+            <div>
+                <span>Featured products</span>
+                <h2>Explore Our Most Popular Collections</h2>
+            </div>
+            <a href="products.html" class="btn btn-primary-1">View All Products</a>
+        </div>
+        <div class="container5">
+            <div class="categories-grid">
+                <article class="category-card">
+                    <img
+                        src="Images/men's wear.jpg"
+                        alt="Men's Wear"
+                        loading="lazy">
+                    <div class="category-card-content">
+                        <span class="category-label">Trending</span>
+                        <h3>Men's Wear</h3>
+                        <p>
+                            Premium street wear, formal looks,
+                            and everyday essentials.
+                        </p>
+                        <div class="category-card-footer">
+                            <span>124 Items</span>
+                            <a href="products.html#men" class="btn btn-secondary">Shop Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="category-card">
+                    <img src="Images/women's wear.webp"    alt="Women's Wear" loading="lazy">
+                    <div class="category-card-content">
+                        <span class="category-label"> Popular </span>
+                        <h3>Women's Wear</h3>
+                        <p>
+                            Fresh fashion, statement pieces,
+                            and seasonal must-haves.
+                        </p>
+                        <div class="category-card-footer">
+                            <span>98 Items</span>
+                            <a href="products.html#women"  class="btn btn-secondary"> Shop Now  </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="category-card">
+                    <img src="Images/beauty.webp" alt="Beauty Products" loading="lazy">
+                    <div class="category-card-content">
+                        <span class="category-label">New</span>
+                        <h3>Beauty</h3>
+                        <p>
+                            Beauty essentials, skincare,
+                            and grooming kits.
+                        </p>
+                        <div class="category-card-footer">
+                            <span>52 Items</span>
+                            <a  href="products.html#beauty"  class="btn btn-secondary"> Shop Now </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="category-card">
+                    <img src="Images/kids wear.jpg" alt="Kids' Products" loading="lazy">
+                    <div class="category-card-content">
+                        <span class="category-label"> Family Favorites </span>
+                        <h3>Kids Wear</h3>
+                        <p>
+                            Adorable outfits, toys,
+                            and accessories for kids.
+                        </p>
+                        <div class="category-card-footer">
+                            <span>76 Items</span>
+                            <a href="products.html#kids"  class="btn btn-secondary"> Shop Now </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="category-card">
+                        <img src="Images/home.webp" alt="Home & Living" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Home Essentials </span>
+                            <h3>Home & Living</h3>
+                            <p>
+                                Stylish decor, kitchenware,
+                                and cozy essentials.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>34 Items</span>
+                                <a href="products.html#home"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+
+                 <article class="category-card">
+                        <img src="Images/sports.jpeg" alt="Sports & Outdoors" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Get Active </span>
+                            <h3>Sports & Outdoors</h3>
+                            <p>
+                                Fitness gear, outdoor essentials,
+                                and sports accessories.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>44 Items</span>
+                                <a href="products.html#sports"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+
+                 <article class="category-card">
+                        <img src="Images/accesories.jpg" alt="Accessories" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Style Staples </span>
+                            <h3>Accessories</h3>
+                            <p>
+                                Statement pieces, everyday essentials,
+                                and finishing touches.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>58 Items</span>
+                                <a href="products.html#accessories"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="category-card">
+                        <img src="Images/electronics.jpg" alt="Electronics" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Tech Trends </span>
+                            <h3>Gadgets</h3>
+                            <p>
+                                Innovative gadgets, smart devices,
+                                and tech accessories.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>22 Items</span>
+                                <a href="products.html#electronics"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="category-card">
+                        <img src="Images/Alchoholic drinks.jpg" alt="Alcoholic Drinks" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Quality Selection </span>
+                            <h3>Alcoholic Drinks</h3>
+                            <p>
+                                Curated selection of wines,
+                                spirits, and craft beverages.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>48 Items</span>
+                                <a href="products.html#alcoholic-drinks"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="category-card">
+                        <img src="Images/fruits.jpg" alt="Fruits" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Fresh & Healthy </span>
+                            <h3>Fruits</h3>
+                            <p>
+                                Seasonal produce, fresh picks,
+                                and natural goodness.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>28 Items</span>
+                                <a href="products.html#fruits"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="category-card">
+                        <img src="Images/vegetables.jpg" alt="Vegetables" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Farm Fresh </span>
+                            <h3>Vegetables</h3>
+                            <p>
+                                Crisp greens, vibrant veggies,
+                                and farm-fresh quality.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>32 Items</span>
+                                <a href="products.html#vegetables"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="category-card">
+                        <img src="Images/Fish.jpg" alt="Fish" loading="lazy">
+                        <div class="category-card-content">
+                            <span class="category-label"> Ocean Delights </span>
+                            <h3>Fresh Fish</h3>
+                            <p>
+                                Fresh catch, sustainable seafood,
+                                and delicious preparations.
+                            </p>
+                            <div class="category-card-footer">
+                                <span>24 Items</span>
+                                <a href="products.html#fish"  class="btn btn-secondary"> Shop Now </a>
+                            </div>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <button id="scrollTopBtn" class="scrollTopBtn" type="button" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container5 footer-grid">
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img src="Images/logo2.png" alt="NovaCart Logo"></a>
+                <p>
+                    Your premium source for curated collections,
+                    seamless checkout, and fast support.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3><i class="fa-solid fa-shop"></i> Shop </h3>
+                <a href="products.html">Products</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div class="footer-links">
+                <h3><i class="fa-solid fa-headset"></i>Support</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Returns Policy</a>
+            </div>
+
+            <div class="footer-links">
+                <h3><i class="fa-solid fa-building"></i> Company </h3>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="account.html">Account</a>
+            </div>
+            <div class="footer-contact">
+               <h3><i class="fa-solid fa-address-book"></i> Contact</h3>
+                <p><i class="fa-regular fa-envelope"></i> Email us at <a href="gmail.com">novacart@gmail.com</a> </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                   Call us on <a href="#"> +233 53 521 0031</a>
+                </p>
+            </div>
+                <!-- SOCIAL LINKS -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="https://tiktok.com" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i> </a>
+                    <a href="https://instagram.com" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/0242796361" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <!-- PAYMENT -->
+                <div class="payment-method">
+                    <h3>Payment Methods</h3>
+                    <a href="https://visa.com" class="social-icon" title="Visa"><i class="fa-brands fa-cc-visa"></i></a>
+                    <a href="https://mastercard.com" class="social-icon" title="Mastercard"><i class="fa-brands fa-cc-mastercard"></i></a>
+                    <a href="https://paypal.com" class="social-icon" title="PayPal"><i class="fa-brands fa-paypal"></i></a>
+                    <a href="https://apple.com" class="social-icon" title="Apple Pay"><i class="fa-brands fa-apple"></i></a>
+                    <a href="https://google.com" class="social-icon" title="Google Pay"><i class="fa-brands fa-google"></i></a>
+
+                </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NovaCart. All Rights Reserved.</p>
+            <span><a href="#">Terms and conditions</a> /
+                <a href="#">Privacy Policy</a></span>
+        </div>
+    </footer>
+
+   
+
+    <!-- JAVASCRIPT -->
+    <script src="javascript/main.js" defer></script>
+    <!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 19743619;
+    window.__lc.integration_name = "manual_channels";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/19743619/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+
+
+</body>
+</html>

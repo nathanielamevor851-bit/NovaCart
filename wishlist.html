@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathaniel">
+    <meta name="description" content="A smart e-commerce website">
+    <meta name="keywords" content="shop, cart, prices, label">
+
+    <title>NovaCart | Wishlist</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mediaQuery.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="icon" href="Images/novacart_favicon_2.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html"><img src="Images/logo2.png" alt="NovaCart Logo"></a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html"><i class="fas fa-house"></i><span class="text">Home</span></a>
+            <a href="products.html"><i class="fas fa-box"></i><span class="text">Products</span></a>
+            <a href="about.html"><i class="fas fa-circle-info"></i><span class="text">About</span></a>
+            <a href="contact.html"><i class="fas fa-envelope"></i><span class="text">Contact</span></a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i><span class="text">Wishlist</span></a>
+            <a href="cart.html"><i class="fas fa-cart-shopping"></i><span class="text">Cart</span></a>
+            <a href="account.html"><i class="fas fa-user"></i><span class="text">Login / Signup</span></a>
+        </nav>
+    </aside>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="main-content">
+        <header class="top-header">
+            <form class="search-bar">
+                <input type="text" class="search-input" placeholder="Search products...">
+                <button class="search-btn" type="submit" title="search"><i class="fas fa-search"></i></button>
+            </form>
+
+            <div class="header-actions">
+                <a href="wishlist.html" title="notifications"><i class="fas fa-bell"></i></a>
+                <a href="wishlist.html" title="wishlist"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" title="cart"><i class="fas fa-cart-shopping"></i></a>
+                <a href="account.html" title="user account"><i class="fas fa-user"></i></a>
+            </div>
+        </header>
+
+        <main class="page-shell">
+            <section class="page-hero">
+                <div>
+                    <span class="page-kicker">Saved for later</span>
+                    <h1>Wishlist</h1>
+                    <p>Keep track of the products you love, compare them later, or move them directly into your cart.</p>
+                </div>
+
+                <div class="page-hero-actions">
+                    <a href="products.html" class="btn btn-primary">Browse products</a>
+                    <a href="cart.html" class="btn btn-secondary">View cart</a>
+                </div>
+            </section>
+
+            <section class="page-layout">
+                <div class="content-panel">
+                    <div class="section-header">
+                        <h2>Saved items</h2>
+                        <p>Anything you add from the products page will appear here automatically.</p>
+                    </div>
+                    <div id="wishlistMount" class="saved-list"></div>
+                </div>
+
+                <aside class="summary-panel" id="wishlistSummary"></aside>
+            </section>
+        </main>
+
+        <button id="scrollTopBtn" class="scrollTopBtn" type="button" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <footer class="site-footer">
+            <div class="container5 footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html"><img src="Images/logo2.png" alt="NovaCart Logo"></a>
+                    <p>Your premium source for curated collections, seamless checkout, and fast support.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fa-solid fa-shop"></i> Shop</h3>
+                    <a href="products.html">Products</a>
+                    <a href="wishlist.html">Wishlist</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fa-solid fa-building"></i> Company</h3>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="account.html">Account</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3><i class="fa-solid fa-address-book"></i> Contact</h3>
+                    <p><i class="fa-regular fa-envelope"></i> Email us at <a href="mailto:novacart@gmail.com">novacart@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> Call us on <a href="tel:+233535210031">+233 53 521 0031</a></p>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="https://tiktok.com" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://instagram.com" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/0242796361" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <div class="payment-method">
+                    <h3>Payment Methods</h3>
+                    <a href="https://visa.com" class="social-icon" title="Visa"><i class="fa-brands fa-cc-visa"></i></a>
+                    <a href="https://mastercard.com" class="social-icon" title="Mastercard"><i class="fa-brands fa-cc-mastercard"></i></a>
+                    <a href="https://paypal.com" class="social-icon" title="PayPal"><i class="fa-brands fa-paypal"></i></a>
+                    <a href="https://apple.com" class="social-icon" title="Apple Pay"><i class="fa-brands fa-apple"></i></a>
+                    <a href="https://google.com" class="social-icon" title="Google Pay"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 NovaCart. All Rights Reserved.</p>
+                <span><a href="#">Terms and conditions</a> / <a href="#">Privacy Policy</a></span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="javascript/main.js" defer></script>
+
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 19743619;
+        window.__lc.integration_name = "manual_channels";
+        window.__lc.product_name = "livechat";
+        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/19743619/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+</body>
+
+</html>
