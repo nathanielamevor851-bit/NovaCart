@@ -384,6 +384,19 @@
         addToCart(product);
         removeFromWishlist(productId);
       }
+
+      /**
+       * ============================================================
+       * PAGE RENDERING FUNCTIONS
+       * ============================================================
+       */
+
+      /**
+       * Render shopping cart page
+       * Displays all cart items with quantity controls and totals
+       * Shows empty state message if no items in cart
+       */
+      function renderCartPage() {
         const mount = $('#cartMount');
         const summary = $('#cartSummary');
         if (!mount || !summary) return;
@@ -1087,4 +1100,4 @@
       } else {
         init();
       }
-    })();
+    }());  
