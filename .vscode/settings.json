@@ -5,7 +5,9 @@
         "Asiedu",
         "carde",
         "livechat",
-        "NOVACART"
+        "NOVACART",
+        "Wishlisted",
+        "xmark"
     ],
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#3399ff",

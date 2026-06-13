@@ -22,40 +22,52 @@
 
 <body>
 
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-logo">
-            <a href="index.html"><img src="Images/logo2.png" alt="NovaCart Logo"></a>
-        </div>
+ 
+<aside class="sidebar" id="sidebar">
 
-        <nav class="sidebar-nav">
-            <a href="index.html"><i class="fas fa-house"></i><span class="text">Home</span></a>
-            <a href="products.html"><i class="fas fa-box"></i><span class="text">Products</span></a>
-            <a href="about.html"><i class="fas fa-circle-info"></i><span class="text">About</span></a>
-            <a href="contact.html"><i class="fas fa-envelope"></i><span class="text">Contact</span></a>
-            <a href="wishlist.html"><i class="fas fa-heart"></i><span class="text">Wishlist</span></a>
-            <a href="cart.html"><i class="fas fa-cart-shopping"></i><span class="text">Cart</span></a>
-            <a href="account.html"><i class="fas fa-user"></i><span class="text">Login / Signup</span></a>
-        </nav>
-    </aside>
 
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
-    </button>
+    <!-- NAVIGATION -->
+    <nav class="sidebar-nav">
+        <a href="index.html" class="active"><i class="fas fa-house"></i><span class="text">Home</span></a>
+        <a href="products.html"> <i class="fas fa-box"></i><span class="text">Products</span></a>
+        <a href="about.html"><i class="fas fa-circle-info"></i><span class="text">About</span></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><span class="text">Contact</span></a>
+        <a href="wishlist.html"><i class="fas fa-heart"></i><span class="text">Wishlist</span></a>
+        <a href="cart.html"><i class="fas fa-cart-shopping"></i><span class="text">Cart</span></a>
+        <a href="account.html"><i class="fas fa-user"></i><span class="text">Login / Signup</span></a>
+    </nav>
+</aside>
 
-    <div class="main-content">
-        <header class="top-header">
-            <form class="search-bar">
-                <input type="text" class="search-input" placeholder="Search products...">
-                <button class="search-btn" type="submit" title="search"><i class="fas fa-search"></i></button>
-            </form>
+<!-- MOBILE MENU BUTTON -->
+<button class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i></button>
 
-            <div class="header-actions">
-                <a href="wishlist.html" title="notifications"><i class="fas fa-bell"></i></a>
-                <a href="wishlist.html" title="wishlist"><i class="fas fa-heart"></i></a>
-                <a href="cart.html" title="cart"><i class="fas fa-cart-shopping"></i></a>
-                <a href="account.html" title="user account"><i class="fas fa-user"></i></a>
-            </div>
-        </header>
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <header class="top-header">
+    
+    <!-- LOGO -->
+    <div class="header-logo">
+        <a href="index.html"> <img src="Images/logo2.png" alt="NovaCart Logo"></a>
+    </div>
+
+    <form class="search-bar">
+        <input type="text" class="search-input" placeholder="Search products...">
+        <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+
+    </form>
+
+    
+    <div class="header-actions">
+         <a href="#" title="notifications"><i class="fas fa-bell"></i></a>
+        <a href="wishlist.html" title="wishlist"><i class="fas fa-heart"></i></a>
+         <a href="cart.html" title="cart"><i class="fas fa-cart-shopping"></i></a>
+            <a href="account.html" title="user account"><i class="fas fa-user"></i></a>
+    </div>
+
+</header>
+
+</div>
 
         <main class="page-shell">
             <section class="page-hero">

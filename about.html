@@ -1,346 +1,355 @@
-<<!DOCTYPE html>
-<html lang="en">
+    <<!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nathaniel">
-    <meta name="description" content="A smart e-commerce website">
-    <meta name="keywords" content="shop, cart, prices, label">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nathaniel">
+        <meta name="description" content="A smart e-commerce website">
+        <meta name="keywords" content="shop, cart, prices, label">
 
-    <title>About NovaCart</title>
+        <title>About NovaCart</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/mediaQuery.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/mediaQuery.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+            onload="this.onload=null;this.rel='stylesheet'">
 
-    <!-- Favicon -->
-    <link rel="icon" href="Images/novacart_favicon_2.png" type="image/x-icon">
-</head>
+        <!-- Favicon -->
+        <link rel="icon" href="Images/novacart_favicon_2.png" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
-<!-- SIDEBAR -->
-<aside class="sidebar" id="sidebar">
 
-    <!-- LOGO -->
-    <div class="sidebar-logo">
-        <a href="index.html"> <img src="Images/logo2.png" alt="NovaCart Logo"></a>
+    <aside class="sidebar" id="sidebar">
+
+
+        <!-- NAVIGATION -->
+        <nav class="sidebar-nav">
+            <a href="index.html" class="active"><i class="fas fa-house"></i><span class="text">Home</span></a>
+            <a href="products.html"> <i class="fas fa-box"></i><span class="text">Products</span></a>
+            <a href="about.html"><i class="fas fa-circle-info"></i><span class="text">About</span></a>
+            <a href="contact.html"><i class="fas fa-envelope"></i><span class="text">Contact</span></a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i><span class="text">Wishlist</span></a>
+            <a href="cart.html"><i class="fas fa-cart-shopping"></i><span class="text">Cart</span></a>
+            <a href="account.html"><i class="fas fa-user"></i><span class="text">Login / Signup</span></a>
+        </nav>
+    </aside>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i></button>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+    <header class="top-header">
+        
+        <!-- LOGO -->
+        <div class="header-logo">
+            <a href="index.html"> <img src="Images/logo2.png" alt="NovaCart Logo"></a>
+        </div>
+
+        <form class="search-bar">
+            <input type="text" class="search-input" placeholder="Search products...">
+            <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+
+        </form>
+
+        
+        <div class="header-actions">
+            <a href="#" title="notifications"><i class="fas fa-bell"></i></a>
+            <a href="wishlist.html" title="wishlist"><i class="fas fa-heart"></i></a>
+            <a href="cart.html" title="cart"><i class="fas fa-cart-shopping"></i></a>
+                <a href="account.html" title="user account"><i class="fas fa-user"></i></a>
+        </div>
+
+    </header>
+
     </div>
+    <main class="main-content">
 
-    <!-- NAVIGATION -->
-    <nav class="sidebar-nav">
-        <a href="index.html" class="active"><i class="fas fa-house"></i><span class="text">Home</span></a>
-        <a href="products.html"> <i class="fas fa-box"></i><span class="text">Products</span></a>
-        <a href="about.html"><i class="fas fa-circle-info"></i><span class="text">About</span></a>
-        <a href="contact.html"><i class="fas fa-envelope"></i><span class="text">Contact</span></a>
-        <a href="wishlist.html"><i class="fas fa-heart"></i><span class="text">Wishlist</span></a>
-        <a href="cart.html"><i class="fas fa-cart-shopping"></i><span class="text">Cart</span></a>
-        <a href="account.html"><i class="fas fa-user"></i><span class="text">Login / Signup</span></a>
-    </nav>
-</aside>
+        <!--About Hero-->
 
-<!-- MOBILE MENU BUTTON -->
-<button class="menu-toggle" id="menuToggle">
-    <i class="fas fa-bars"></i></button>
-
-<!-- MAIN CONTENT -->
-<div class="main-content">
-  <header class="top-header">
-   
-    <div class="header-action">
-         <a href="wishlist.html" title="notifications"><i class="fas fa-bell"></i></a>
-        <a href="wishlist.html" title="wishlist"><i class="fas fa-heart"></i></a>
-         <a href="cart.html" title="cart"><i class="fas fa-cart-shopping"></i></a>
-            <a href="account.html" title="user account"><i class="fas fa-user"></i></a>
-    </div>
-</header>
-
-</div>
-<main class="main-content">
-
-    <!--About Hero-->
-
-    <section class="hero-1">
-        <div class="hero-container">
-            <div class="hero-text">
-                <h2>About <span>NovaCart</span></h2>
-                <p>At NovaCart, we are passionate about providing our customers with a seamless and enjoyable online shopping experience.
-                     Our mission is to offer a wide range of high-quality products at competitive prices, while delivering exceptional customer service.</p>
-                <button class="products-btn" onclick="window.location.href='products.html'">Explore Products</button>
+        <section class="hero-1">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h2>About <span>NovaCart</span></h2>
+                    <p>At NovaCart, we are passionate about providing our customers with a seamless and enjoyable online shopping experience.
+                        Our mission is to offer a wide range of high-quality products at competitive prices, while delivering exceptional customer service.</p>
+                    <button class="products-btn" onclick="window.location.href='products.html'">Explore Products</button>
+                </div>
             </div>
+            <div class="about-hero-image">
+                <img src="Images/curtains.jpg" loading="lazy" title="Curtains" alt="curtains">
+                <img src="Images/tablets.jpg" loading="lazy" title="Tablets" alt="home">
+            </div>
+        </section>
+
+        <!-- About Section -->
+    <section class="about-products" id="about-products">
+        <div class="about-products-1">
+        <h2>Featured Products</h2>
         </div>
-        <div class="about-hero-image">
-            <img src="Images/curtains.jpg" loading="lazy" title="Curtains" alt="curtains">
-            <img src="Images/tablets.jpg" loading="lazy" title="Tablets" alt="home">
-        </div>
+        <div class="about-products-grid">
+            <article class="about-product-card">
+                <img src="Images/Lady's bag.jpg" loading="lazy" alt="Lady's bag">
+                <h3>Elegant Handbag</h3>
+                <p>A stylish and functional handbag perfect for any occasion.</p>
+                <span class="new-price">GH¢180.99</span>
+                <span class="old-price">GH¢200.99</span>
+                <span class="rating">4.5 <i class="fas fa-star"></i></span>
+                <button class="btn btn-primary btn-buy">Buy</button>
+                <button class="btn btn-primary btn-cart">Add to Cart</button>
+                <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
+            </article>
+
+            <article class="about-product-card">
+                <img src="Images/phones.jpg" loading="lazy" alt="Smartphone">
+                <h3>Latest Smartphone</h3>
+                <p>A powerful smartphone with cutting-edge features and sleek design.</p>
+                <span class="new-price">GH¢999.99</span>
+                <span class="old-price">GH¢1,199.99</span>
+                <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                <button class="btn btn-primary btn-buy">Buy</button>
+                <button class="btn btn-primary btn-cart">Add to Cart</button>
+                <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
+            </article>
+
+            <article class="about-product-card">
+                <img src="Images/headphones.jpg" loading="lazy" alt="Wireless headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Experience high-quality sound with these comfortable wireless headphones.</p>
+                <span class="new-price">GH¢150.99</span>
+                <span class="old-price">GH¢199.99</span>
+                <span class="rating">4.6 <i class="fas fa-star"></i></span>
+                <button class="btn btn-primary btn-buy">Buy</button>
+                <button class="btn btn-primary btn-cart">Add to Cart</button>
+                <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
+            </article>
+
+            <article class="about-product-card">
+                <img src="Images/beauty.webp" loading="lazy" alt="Beauty essentials">
+                <h3>Beauty Essentials Set</h3>
+                <p>A curated set of beauty products to enhance your skincare routine.</p>
+                <span class="new-price">GH¢80.99</span>
+                <span class="old-price">GH¢120.99</span>
+                <span class="rating">4.7 <i class="fas fa-star"></i></span>
+                <button class="btn btn-primary btn-buy">Buy</button>
+                <button class="btn btn-primary btn-cart">Add to Cart</button>
+                <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
+            </article>
+
+            <article class="about-product-card">
+                <img src="Images/sports shoes.jpg" loading="lazy" alt="Sneakers">
+                <h3>Sporty Sneakers</h3>
+                <p>Comfortable and stylish sneakers perfect for everyday wear.</p>
+                <span class="new-price">GH¢120.99</span>
+                <span class="old-price">GH¢150.99</span>
+                <span class="rating">4.4 <i class="fas fa-star"></i></span>
+                <button class="btn btn-primary btn-buy">Buy</button>
+                <button class="btn btn-primary btn-cart">Add to Cart</button>
+                <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
+            </article>
+
+            <article class="about-product-card">
+                <img src="Images/watches.jpg" loading="lazy" alt="Wristwatch">
+                <h3>Classic Wristwatch</h3>
+                <p>A timeless wristwatch that combines elegance and functionality.</p>
+                <span class="new-price">GH¢200.99</span>
+                <span class="old-price">GH¢250.99</span>
+                <span class="rating">4.5 <i class="fas fa-star"></i></span>
+                <button class="btn btn-primary btn-buy">Buy</button>
+                <button class="btn btn-primary btn-cart">Add to Cart</button>
+                <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
+            </article>
     </section>
 
-    <!-- About Section -->
-<section class="about-products" id="about-products">
-    <div class="about-products-1">
-    <h2>Featured Products</h2>
-    </div>
-    <div class="about-products-grid">
-        <article class="about-product-card">
-            <img src="Images/Lady's bag.jpg" loading="lazy" alt="Lady's bag">
-            <h3>Elegant Handbag</h3>
-            <p>A stylish and functional handbag perfect for any occasion.</p>
-            <span class="new-price">GH¢180.99</span>
-            <span class="old-price">GH¢200.99</span>
-            <span class="rating">4.5 <i class="fas fa-star"></i></span>
-            <button class="btn btn-primary btn-buy">Buy</button>
-            <button class="btn btn-primary btn-cart">Add to Cart</button>
-            <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
-        </article>
-
-        <article class="about-product-card">
-            <img src="Images/phones.jpg" loading="lazy" alt="Smartphone">
-            <h3>Latest Smartphone</h3>
-            <p>A powerful smartphone with cutting-edge features and sleek design.</p>
-            <span class="new-price">GH¢999.99</span>
-            <span class="old-price">GH¢1,199.99</span>
-            <span class="rating">4.8 <i class="fas fa-star"></i></span>
-            <button class="btn btn-primary btn-buy">Buy</button>
-            <button class="btn btn-primary btn-cart">Add to Cart</button>
-            <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
-        </article>
-
-        <article class="about-product-card">
-            <img src="Images/headphones.jpg" loading="lazy" alt="Wireless headphones">
-            <h3>Wireless Headphones</h3>
-            <p>Experience high-quality sound with these comfortable wireless headphones.</p>
-            <span class="new-price">GH¢150.99</span>
-            <span class="old-price">GH¢199.99</span>
-            <span class="rating">4.6 <i class="fas fa-star"></i></span>
-            <button class="btn btn-primary btn-buy">Buy</button>
-            <button class="btn btn-primary btn-cart">Add to Cart</button>
-            <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
-        </article>
-
-        <article class="about-product-card">
-            <img src="Images/beauty.webp" loading="lazy" alt="Beauty essentials">
-            <h3>Beauty Essentials Set</h3>
-            <p>A curated set of beauty products to enhance your skincare routine.</p>
-            <span class="new-price">GH¢80.99</span>
-            <span class="old-price">GH¢120.99</span>
-            <span class="rating">4.7 <i class="fas fa-star"></i></span>
-            <button class="btn btn-primary btn-buy">Buy</button>
-            <button class="btn btn-primary btn-cart">Add to Cart</button>
-            <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
-        </article>
-
-        <article class="about-product-card">
-            <img src="Images/sports shoes.jpg" loading="lazy" alt="Sneakers">
-            <h3>Sporty Sneakers</h3>
-            <p>Comfortable and stylish sneakers perfect for everyday wear.</p>
-            <span class="new-price">GH¢120.99</span>
-            <span class="old-price">GH¢150.99</span>
-            <span class="rating">4.4 <i class="fas fa-star"></i></span>
-            <button class="btn btn-primary btn-buy">Buy</button>
-            <button class="btn btn-primary btn-cart">Add to Cart</button>
-            <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
-        </article>
-
-        <article class="about-product-card">
-            <img src="Images/watches.jpg" loading="lazy" alt="Wristwatch">
-            <h3>Classic Wristwatch</h3>
-            <p>A timeless wristwatch that combines elegance and functionality.</p>
-            <span class="new-price">GH¢200.99</span>
-            <span class="old-price">GH¢250.99</span>
-            <span class="rating">4.5 <i class="fas fa-star"></i></span>
-            <button class="btn btn-primary btn-buy">Buy</button>
-            <button class="btn btn-primary btn-cart">Add to Cart</button>
-            <button class="btn btn-primary btn-wishlist">Add to Wishlist</button>
-        </article>
-</section>
 
 
 
 
+        <section class="about-section">
+        <section class="about-products">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2020, NovaCart started as a small online store with a vision to revolutionize the way people shop. 
+                        We have since grown into a trusted e-commerce platform, serving customers worldwide with a diverse selection of products ranging from fashion and electronics to home goods and more.</p>
+                    <p>Our commitment to quality, affordability, and customer satisfaction has been the driving force behind our success. We continuously strive to improve our services and expand our product offerings to meet the evolving needs of our customers.</p>
+                </div> 
 
-    <section class="about-section">
-      <section class="about-products">
-        <div class="container about-container">
-            <div class="about-content">
-                <h3>Our Story</h3>
-                <p>Founded in 2020, NovaCart started as a small online store with a vision to revolutionize the way people shop. 
-                    We have since grown into a trusted e-commerce platform, serving customers worldwide with a diverse selection of products ranging from fashion and electronics to home goods and more.</p>
-                <p>Our commitment to quality, affordability, and customer satisfaction has been the driving force behind our success. We continuously strive to improve our services and expand our product offerings to meet the evolving needs of our customers.</p>
-            </div> 
+                <div class="about-card"><i class="fas fa-users"></i>
+                    <h4>Customer-Centric</h4>
+                    <p>We prioritize our customers' needs and feedback, ensuring a personalized shopping experience that exceeds expectations.</p>
+                </div>
+                <div class="about-card"><i class="fas fa-box-open"></i>
+                    <h4>Curated Collections</h4>
+                    <p>Our team carefully selects products to ensure we offer only the best quality and value to our customers.</p>
+                </div>
+                <div class="about-card"><i class="fas fa-headset"></i>
+                    <h4>24/7 Support</h4>
+                    <p>Our dedicated support team is available around the clock to assist you with any questions or concerns.</p>
+                </div>
+                <div class="about-card"><i class="fas fa-undo"></i>
+                    <h4>Easy Returns</h4>
+                    <p>We offer hassle-free returns and exchanges to ensure your complete satisfaction with every purchase.</p>
+                </div>
+                <div class="about-card"><i class="fas fa-tags"></i>
+                    <h4>Best Prices</h4>
+                    <p>We are committed to offering competitive prices and regular promotions to provide the best value for our customers.</p>
+                </div>
+                <div class="about-card"><i class="fas fa-shield-alt"></i>
+                    <h4>Secure Shopping</h4>
+                    <p>Your security is our priority. We use advanced encryption and secure payment gateways to protect your information.</p>
+                </div>
+                <div class="about-card"><i class="fas fa-truck"></i>
+                    <h4>Fast Shipping</h4>
+                    <p>We offer fast and reliable shipping options to ensure your orders arrive on time.</p>
+                </div>
 
-            <div class="about-card"><i class="fas fa-users"></i>
-                <h4>Customer-Centric</h4>
-                <p>We prioritize our customers' needs and feedback, ensuring a personalized shopping experience that exceeds expectations.</p>
-            </div>
-             <div class="about-card"><i class="fas fa-box-open"></i>
-                <h4>Curated Collections</h4>
-                <p>Our team carefully selects products to ensure we offer only the best quality and value to our customers.</p>
-            </div>
-             <div class="about-card"><i class="fas fa-headset"></i>
-                <h4>24/7 Support</h4>
-                <p>Our dedicated support team is available around the clock to assist you with any questions or concerns.</p>
-            </div>
-             <div class="about-card"><i class="fas fa-undo"></i>
-                <h4>Easy Returns</h4>
-                <p>We offer hassle-free returns and exchanges to ensure your complete satisfaction with every purchase.</p>
-            </div>
-             <div class="about-card"><i class="fas fa-tags"></i>
-                <h4>Best Prices</h4>
-                <p>We are committed to offering competitive prices and regular promotions to provide the best value for our customers.</p>
-            </div>
-            <div class="about-card"><i class="fas fa-shield-alt"></i>
-                <h4>Secure Shopping</h4>
-                <p>Your security is our priority. We use advanced encryption and secure payment gateways to protect your information.</p>
-            </div>
-            <div class="about-card"><i class="fas fa-truck"></i>
-                <h4>Fast Shipping</h4>
-                <p>We offer fast and reliable shipping options to ensure your orders arrive on time.</p>
-            </div>
-
-             <section class="stats-section">
-                <div class="stats-container">
-                   <div class="stats-card">
-                        <h3>500K+</h3>
-                        <p>Happy Customers</p>
-                    </div>
+                <section class="stats-section">
+                    <div class="stats-container">
                     <div class="stats-card">
-                        <h3>10K+</h3>
-                        <p>Products Available</p>
+                            <h3>500K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stats-card">
+                            <h3>10K+</h3>
+                            <p>Products Available</p>
+                        </div>
+                        <div class="stats-carde">
+                            <h3>4.8/5</h3>
+                            <p>Customer Rating</p>
+                        </div>
+                        <div class="stats-card">
+                            <h3>99.9%</h3>
+                            <p>Order Accuracy</p>
+                        </div>
+                        <div class="stats-carde">
+                            <h3>24/7</h3>
+                            <p>Customer Support</p>
+                        </div>
                     </div>
-                    <div class="stats-carde">
-                        <h3>4.8/5</h3>
-                        <p>Customer Rating</p>
+                </section>
+
+                <section class="team-section">
+                    <h2>Meet the Team</h2>
+                    <div class="team-container">
+                        <div class="team-member">
+                            <img src="Images/1000292586.jpg" alt="Team Member 1">
+                            <h4>Nathaniel Amevor</h4>
+                            <p>Founder & CEO</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="Images/IMG-20260325-WA0008.jpg" alt="Team Member 2">
+                            <h4>John Doe</h4>
+                            <p>Marketing Officer</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="Images/IMG-20260325-WA0011.jpg" alt="Team Member 3">
+                            <h4>Johnson Asiedu</h4>
+                            <p>Head of Customer Service</p>
+                        </div>
                     </div>
-                    <div class="stats-card">
-                        <h3>99.9%</h3>
-                        <p>Order Accuracy</p>
-                    </div>
-                    <div class="stats-carde">
-                        <h3>24/7</h3>
-                        <p>Customer Support</p>
-                    </div>
+                </section>
+            </div>
+        </section>
+        </section>
+    </main>
+
+        <button id="scrollTopBtn" class="scrollTopBtn" type="button" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="container5 footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html">
+                        <img src="Images/logo2.png" alt="NovaCart Logo"></a>
+                    <p>
+                        Your premium source for curated collections,
+                        seamless checkout, and fast support.
+                    </p>
                 </div>
-             </section>
-
-             <section class="team-section">
-                <h2>Meet the Team</h2>
-                <div class="team-container">
-                    <div class="team-member">
-                        <img src="Images/1000292586.jpg" alt="Team Member 1">
-                        <h4>Nathaniel Amevor</h4>
-                        <p>Founder & CEO</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="Images/IMG-20260325-WA0008.jpg" alt="Team Member 2">
-                        <h4>John Doe</h4>
-                        <p>Marketing Officer</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="Images/IMG-20260325-WA0011.jpg" alt="Team Member 3">
-                        <h4>Johnson Asiedu</h4>
-                        <p>Head of Customer Service</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-      </section>
-    </section>
-</main>
-
-    <button id="scrollTopBtn" class="scrollTopBtn" type="button" aria-label="Scroll to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="container5 footer-grid">
-            <div class="footer-brand">
-                <a href="index.html">
-                    <img src="Images/logo2.png" alt="NovaCart Logo"></a>
-                <p>
-                    Your premium source for curated collections,
-                    seamless checkout, and fast support.
-                </p>
-            </div>
-            <div class="footer-links">
-                <h3><i class="fa-solid fa-shop"></i> Shop </h3>
-                <a href="products.html">Products</a>
-                <a href="wishlist.html">Wishlist</a>
-                <a href="cart.html">Cart</a>
-            </div>
-
-            <div class="footer-links">
-                <h3><i class="fa-solid fa-headset"></i>Support</h3>
-                <a href="#">FAQ</a>
-                <a href="#">Shipping Info</a>
-                <a href="#">Returns Policy</a>
-            </div>
-
-            <div class="footer-links">
-                <h3><i class="fa-solid fa-building"></i> Company </h3>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="account.html">Account</a>
-            </div>
-            <div class="footer-contact">
-               <h3><i class="fa-solid fa-address-book"></i> Contact</h3>
-                <p><i class="fa-regular fa-envelope"></i> Email us at <a href="gmail.com">novacart@gmail.com</a> </p>
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                   Call us on <a href="#"> +233 53 521 0031</a>
-                </p>
-            </div>
-                <!-- SOCIAL LINKS -->
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <a href="https://tiktok.com" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i> </a>
-                    <a href="https://instagram.com" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://wa.me/0242796361" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <div class="footer-links">
+                    <h3><i class="fa-solid fa-shop"></i> Shop </h3>
+                    <a href="products.html">Products</a>
+                    <a href="wishlist.html">Wishlist</a>
+                    <a href="cart.html">Cart</a>
                 </div>
 
-                <!-- PAYMENT -->
-                <div class="payment-method">
-                    <h3>Payment Methods</h3>
-                    <a href="https://visa.com" class="social-icon" title="Visa"><i class="fa-brands fa-cc-visa"></i></a>
-                    <a href="https://mastercard.com" class="social-icon" title="Mastercard"><i class="fa-brands fa-cc-mastercard"></i></a>
-                    <a href="https://paypal.com" class="social-icon" title="PayPal"><i class="fa-brands fa-paypal"></i></a>
-                    <a href="https://apple.com" class="social-icon" title="Apple Pay"><i class="fa-brands fa-apple"></i></a>
-                    <a href="https://google.com" class="social-icon" title="Google Pay"><i class="fa-brands fa-google"></i></a>
-
+                <div class="footer-links">
+                    <h3><i class="fa-solid fa-headset"></i>Support</h3>
+                    <a href="#">FAQ</a>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Returns Policy</a>
                 </div>
-            
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 NovaCart. All Rights Reserved.</p>
-            <span><a href="#">Terms and conditions</a> /
-                <a href="#">Privacy Policy</a></span>
-        </div>
-    </footer>
 
-    <!-- JAVASCRIPT -->
-    <script src="javascript/main.js" defer></script>
+                <div class="footer-links">
+                    <h3><i class="fa-solid fa-building"></i> Company </h3>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="account.html">Account</a>
+                </div>
+                <div class="footer-contact">
+                <h3><i class="fa-solid fa-address-book"></i> Contact</h3>
+                    <p><i class="fa-regular fa-envelope"></i> Email us at <a href="gmail.com">novacart@gmail.com</a> </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                    Call us on <a href="#"> +233 53 521 0031</a>
+                    </p>
+                </div>
+                    <!-- SOCIAL LINKS -->
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <a href="https://tiktok.com" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i> </a>
+                        <a href="https://instagram.com" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/0242796361" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
 
-    <!-- Start of LiveChat (www.livechat.com) code -->
-<script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 19743619;
-    window.__lc.integration_name = "manual_channels";
-    window.__lc.product_name = "livechat";
-    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},
-    once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");
-    return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",
-    n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
-<noscript><a href="https://www.livechat.com/chat-with/19743619/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
-<!-- End of LiveChat code -->
+                    <!-- PAYMENT -->
+                    <div class="payment-method">
+                        <h3>Payment Methods</h3>
+                        <a href="https://visa.com" class="social-icon" title="Visa"><i class="fa-brands fa-cc-visa"></i></a>
+                        <a href="https://mastercard.com" class="social-icon" title="Mastercard"><i class="fa-brands fa-cc-mastercard"></i></a>
+                        <a href="https://paypal.com" class="social-icon" title="PayPal"><i class="fa-brands fa-paypal"></i></a>
+                        <a href="https://apple.com" class="social-icon" title="Apple Pay"><i class="fa-brands fa-apple"></i></a>
+                        <a href="https://google.com" class="social-icon" title="Google Pay"><i class="fa-brands fa-google"></i></a>
 
-    </body>
-    </html>
+                    </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 NovaCart. All Rights Reserved.</p>
+                <span><a href="#">Terms and conditions</a> /
+                    <a href="#">Privacy Policy</a></span>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT -->
+        <script src="javascript/main.js" defer></script>
+
+        <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 19743619;
+        window.__lc.integration_name = "manual_channels";
+        window.__lc.product_name = "livechat";
+        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},
+        once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");
+        return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",
+        n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/19743619/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
+
+        </body>
+        </html>
