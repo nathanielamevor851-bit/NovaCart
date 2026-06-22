@@ -263,6 +263,53 @@
           button.className = originalClass;
         }, 1200);
       }
+      
+      // Stats counter
+  const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+            let count = 0;
+
+            const update = () => {
+                count += Math.ceil(target / 100);
+
+                if (count < target) {
+                    counter.textContent = count;
+                    requestAnimationFrame(update);
+                } else {
+                    counter.textContent =
+                        target === 10000 ? "10K+" :
+                        target === 500 ? "500+" :
+                        "24/7";
+                }
+            };
+
+            update();
+            observer.unobserve(counter);
+        }
+    });
+});
+
+counters.forEach(counter => observer.observe(counter));
+
+counters.forEach(counter => observer.observe(counter));
+
+// FadeIn Animations
+window.addEventListener("load", () => {
+    document.querySelector(".hero-text, .about-hero-image, .products-hero-image").classList.add("show");
+
+    const images = document.querySelectorAll(".products-hero-image img");
+
+    images.forEach((img, index) => {
+        setTimeout(() => {
+            img.classList.add("show");
+        }, index * 300); // Stagger image fade-in
+    });
+});
 
       /**
        * ============================================================
@@ -709,7 +756,7 @@
         `;
         document.head.appendChild(style);
 
-        const targets = $$('.category-card, .top-products-card, .new-arrivals-card, .best-sales-card, .footer-brand, .footer-links, .footer-contact, .footer-social, .payment-method, .saved-card, .summary-card, .page-hero');
+        const targets = $$('.category-card, .top-products-card, .new-arrivals-card, .best-sales-card, .footer-brand, .footer-links, .footer-contact, .footer-social, .payment-method, .saved-card, .summary-card, .page-hero, .checkbox-label-1');
         targets.forEach((node) => node.classList.add('reveal'));
 
         const observer = new IntersectionObserver((entries) => {

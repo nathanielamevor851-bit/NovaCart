@@ -381,15 +381,15 @@
             padding: 2rem 3rem 4.5rem;
             overflow: hidden;
             margin-left: 60px;
-            animation: fadeIn 0.6s ease-out;
+            animation: slideUp 3s ease-out;
         }
 
-          @keyframes fadeIn {
-            from {
+          @keyframes slideUp {
+            0%,100%{
                 opacity: 0;
                 transform: translateY(20px);
             }
-            to {
+            50% {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -401,19 +401,9 @@
             position: relative;
             z-index: 2;
             right: 0;
-            animation: slideUp 0.6s ease-out;
         }
 
-         @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+      
 
 
 
@@ -466,19 +456,8 @@
             margin-top: 80px;
             flex: 1;
             margin-right: 120px;
-            animation: fadeIn 0.6s ease-out;
         }
 
-        keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
 
         .hero-image img{
             width: min(100%, 390px);
@@ -770,17 +749,17 @@
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -40px;
-            animation: fadeIn 0.7s ease-out;
+            animation: slideUp 3s ease-out;
         }
 
-          @keyframes fadeIn {
-            from {
+          @keyframes SlideUp {
+            0%,100% {
                 opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
                 transform: translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(20px);
             }
         }
 
@@ -795,13 +774,13 @@
             margin-left: 10px;
             gap: 3rem;
             cursor: pointer;
-            animation: fadeIn 0.6s ease-out;
+            animation: fadeIn 0.3s ease-out;
         }
 
         keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -2362,10 +2341,10 @@
         .social-btn {
             width: 45px;
             height: 45px;
-            border: 2px solid rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(0, 153, 255, 0.3);
             border-radius: 12px;
-            background: rgba(255, 255, 255, 0.05);
-            color: white;
+            background:  rgba(0, 132, 255, 0.1);;
+            color: #00d4ff;
             font-size: 1.1rem;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -2375,21 +2354,22 @@
         }
 
         .social-btn:hover {
-            transform: translateY(-3px);
-            border-color: rgba(255, 255, 255, 0.2);
-            background: rgba(255, 255, 255, 0.1);
+            background: #7de1ff;
+            color: #07234d;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 195, 255, 0.3);
         }
 
         .google-btn:hover {
-            color: #4285F4;
+            color: black;
         }
 
         .facebook-btn:hover {
-            color: #1877F2;
+            color: black;
         }
 
         .github-btn:hover {
-            color: #ffffff;
+            color: black;
         }
 
         /* Auth Footer */
